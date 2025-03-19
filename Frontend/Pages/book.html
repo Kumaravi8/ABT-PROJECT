@@ -1,1 +1,120 @@
-<!-- book.html - This page displays booking page for users-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Anjali Bhardwaj</title>
+    <link rel="stylesheet" href="/ABT-PROJECT/Frontend/css/book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="navbar-container"></div>
+
+    <!-- Booking Form -->
+    <div class="container">
+        <div class="user-profile">
+            <div class="profile-image"></div>
+            <div class="profile-text">
+                <p>User Name</p>
+            </div>
+        </div>
+        <h2>Book a show with Anjali Bhardwaj</h2>
+        <div class="form-container">
+            <form id="bookingForm" onsubmit="return validateForm(event)">
+
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <!-- <input type="text" id="name" name="name" placeholder="Your full name" required pattern="[A-Za-z ]{3,}" title="Only letters and spaces, at least 3 characters"> -->
+                    <input type="text" id="name" name="name" placeholder="Your full name" >
+                    <span id="nameError" class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <span id="emailError" class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required pattern="[0-9]{10}" maxlength="10" title="Enter a valid 10-digit phone number">
+                    <span id="phoneError" class="error-message"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="eventDate">Event Date</label>
+                        <input type="date" id="eventDate" name="eventDate" required>
+                        <span id="eventDateError" class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Event Location</label>
+                        <input type="text" id="location" name="location" placeholder="City, State" required>
+                    </div>
+                </div>
+                
+
+                <!-- Event Type with "Other" option -->
+                <div class="form-group">
+                    <label>Event Type</label>
+                    <select id="eventType" name="eventType" required onchange="handleEventType()">
+                        <option value="">Select an event type</option>
+                        <option value="Kirtan & Bhajan">Kirtan & Bhajan</option>
+                        <option value="Satsang">Satsang</option>
+                        <option value="Jagrans">Jagrans</option>
+                        <option value="Fairs & Melas">Fairs & Melas</option>
+                        <option value="Festival">Festival</option>
+                        <option value="Other">Other (Specify Below)</option>
+                    </select>
+                    <span id="eventType" class="error-message"></span>
+                </div>
+
+                <!-- Hidden textbox for "Other" Event Type -->
+                <div class="form-group" id="otherEventDiv" style="display: none;">
+                    <label for="otherEventInput">Specify Your Event Type</label>
+                    <input type="text" id="otherEventInput" name="otherEventInput" placeholder="Enter event type">
+                </div>
+
+                <div class="form-group">
+                    <label for="audienceSize">Audience Size</label>
+                    <select id="audienceSize" name="audienceSize" required>
+                        <option value="">Select audience size</option>
+                        <option value="Less than 50">Less than 50</option>
+                        <option value="50-200">50-200</option>
+                        <option value="200+">200+</option>
+                    </select>
+                </div>
+
+                <!-- Special Request with "Other" option -->
+                <div class="form-group">
+                    <label for="specialRequest">Special Request</label>
+                    <select id="specialRequest" name="specialRequest" required onchange="handleSpecialRequest()">
+                        <option value="None">No Special Request</option>
+                        <option value="VIP Seating">VIP Seating (+ ₹1000)</option>
+                        <option value="Meet & Greet">Meet & Greet (+ ₹1500)</option>
+                        <option value="Other">Other (Specify Below)</option>
+                    </select>
+                </div>
+
+                <!-- Hidden textbox for "Other" Special Request -->
+                <div class="form-group" id="otherRequestDiv" style="display: none;">
+                    <label for="otherRequest">Specify Your Request</label>
+                    <input type="text" id="otherRequest" name="otherRequest" placeholder="Enter your request">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Book Event</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/ABT-PROJECT/Frontend/js/book.js">  
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+    background-color: bisque;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.8s ease-in-out;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #DB6812;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #DB6812;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.profile h2 {
+    font-size: 20px;
+}
+
+.highlight {
+    color: #DB6812;
+}
+
+/* Button */
+button {
+    background-color: #DB6812;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FFEAD8;
+    color: #DB6812;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Containers */
+.Container, .Profile-Container, .Music-Container {
+    max-width: 90vw;
+    background-color: white;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Container:hover, .Profile-Container:hover, .Music-Container:hover {
+    transform: scale(1.02);
+}
+
+/* User Profile */
+.User-Profile-Container {
+    max-width: 150px;
+    z-index: 1;
+    height: 150px;
+    background-color: white;
+    margin-left: 60px;
+    margin-top: -50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.user-profile-name {
+    width: 200px;
+    height: 150px;
+    margin-left: 200px;
+    margin-top: -80px;
+}
+
+.user-profile-name h4 {
+    color: #DB6812;
+    font-size: 28px;
+    font-family: MuseoModerno, sans-serif;
+    font-weight: bold;
+}
+
+.user-profile-name p {
+    color: grey;
+}
+
+/* Header Section */
+.color-profile {
+    width: 100%;
+    height: 200px;
+    background-color: #DB6812;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Playlist Section */
+.playlist-section {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #DB6812;
+}
+
+/* Song List */
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .profile {
+        flex-direction: column;
+    }
+    .Container, .Profile-Container, .Music-Container {
+        width: 95%;
+    }
+    .playlist-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
