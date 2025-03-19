@@ -1,1 +1,96 @@
-<!-- login.html - This page allows users to log in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Anubhav/ABT-PROJECT/Frontend/css/style.css">
+    <script src="/Anubhav/ABT-PROJECT/Frontend/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="content">
+        <div class="sign_in">
+            <div class="Login_content">
+                <div class="logo">
+                    <div class="logo_c1"><img src="/Anubhav/ABT-PROJECT/Frontend/Assets/image/Logo.PNG" alt="Not Present Image"></div>
+                    <div class="logo_c2"><h2>Anjali</h2><h2 class="bh">Bhardwaj</h2></div>
+                </div><br>
+                <h1 id="we">Welcome Back</h1>
+                <div class="po">
+                    <input type="checkbox" id="ch"><p id="we1">Welcome Back, Please enter your details</p><a href="#" id="a1"></a>
+                </div>
+                <div class="button_content">
+                    <div class="button1"><button type="button" id="c" onclick="signin()">Sign In</button></div>
+                    <div class="button2"><button type="button" id="b" onclick="signup()">Sign Up</button></div>
+                </div>
+                <div id="boxinput">
+
+                    <div class="email">
+                        <label>Email Id / Mobile No</label>
+                        <input type="email" placeholder="Demo@gmail.com" id="email">
+                    </div>
+                    <div class="password">
+                        <label>Password</label>
+                        <input type="password" placeholder="**********" id="Password">
+                    </div>
+                    <div class="forgot">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                    </div>
+                    <div class="button3">
+                        <button type="button" id="button4">Continue</button>
+                    </div>
+                    <div class="continue">
+                        <div></div>
+                        <p class="p1">Or Continue With</p>
+                        <div></div>
+                    </div>
+                    <div class="google">
+                        <div class="g"><img src="/Anubhav/ABT-PROJECT/Frontend/Assets/image/icons8-google-48.png" alt=""></div>
+                        <div class="g"><img src="/Anubhav/ABT-PROJECT/Frontend/Assets/image/icons8-apple-50.png" alt=""></div>
+                        <div class="g"><img src="/Anubhav/ABT-PROJECT/Frontend/Assets/image/icons8-facebook-48.png" alt=""></div>
+                    </div>
+                    <div class="re">
+                        <p class="dont">Dont have a registration yet? </p><a href="" onclick="signin1(); return false;">Register here</a>
+                    </div>
+                </div>
+                <div id="boxinput1">
+                    <div class="mobile">
+                        <label>Mobile Number</label>
+                        <input type="number" placeholder="Enter Mobile" id="Mobile">
+                    </div>
+                    <div class="email">
+                        <label>Email Id</label>
+                        <input type="email" placeholder="Demo@gmail.com" id="email">
+                    </div>
+                    
+                    <div class="password">
+                        <label>Create Password</label>
+                        <input type="password" placeholder="**********" id="Password">
+                    </div>
+                    <div class="password">
+                        <label>Re-enter Password</label>
+                        <input type="password" placeholder="**********" id="Password1">
+                    </div>
+                    <div class="button3">
+                        <button type="button" id="button4">Continue</button>
+                    </div>
+                    <div class="continue">
+                        <div></div>
+                        <p class="p1">Or Continue With</p>
+                        <div></div>
+                    </div>
+                    <div class="google">
+                        <div class="g"><img src="/Anubhav/ABT-PROJECT/Frontend/Assets/image/icons8-google-48.png" alt=""></div>
+                        <div class="g"><img src="/Anubhav/ABT-PROJECT/Frontend/Assets/image/icons8-apple-50.png" alt=""></div>
+                        <div class="g"><img src="/Anubhav/ABT-PROJECT/Frontend/Assets/image/icons8-facebook-48.png" alt=""></div>
+                    </div>
+                    <div class="re">
+                        <p class="dont">Already have an account? </p><a href="" onclick="signup1(); return false;">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

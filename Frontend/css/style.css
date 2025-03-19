@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-image: url(Image/back\ copy.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.sign_in,.image{
+    width: 100%;
+    height: 100%;
+    
+}
+.boxinput a{
+    text-align: left;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.Login_content{
+    width: 30%;
+    height: auto;
+   text-align: center;
+
+}
+.sign_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forgot{
+    width: 100%;
+    text-align: right;
+    padding-top: 15px;
+}
+.logo{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.logo_c1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+
+}
+.logo_c1 img{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    display: inline;
+    padding-left: 2px;
+}
+.bh{
+    color: #DC5014;
+    padding-left: 5px;
+}
+.logo_c2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: inline;
+}
+.p1{
+    font-size: 15px;
+    padding-top: 0px;
+    padding: 0px;
+}
+.po{
+    width: 100%;
+    height: 4vh;
+    margin: 15px 0px;
+}
+#a1{
+    padding-left: 5px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: blue;
+}
+.button_content{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #FFEAD8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button1,.button2{
+    width: 49%;
+    height: 90%;
+}
+.button1 button{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    background-color: white;
+    border:1.5px solid #FFEAD8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button2 button{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    background-color: rgba(245, 222, 179, 0);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#boxinput{
+    width: 100%;
+    height: 100%;
+    
+}
+#boxinput1{
+    width: 100%;
+    height: 65%;
+    display: none;
+}
+.email{
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: #FFEAD8;
+    border:1.5px solid #DC5014;
+    text-align: left;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+label{
+    padding-left: 10px;
+    font-size: 12px;
+    
+}
+.continue{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.continue div{
+    width: 28%;
+    height: 1px;
+    background-color: black;
+}
+#ch{
+    display: none;
+}
+#email{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    background-color: #dc501400;
+    border:none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+
+}
+#email::placeholder{
+    font-size: 15px;
+}
+#do{
+    font-size: 30px;
+}
+.password{
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: #FFEAD8;
+    border:1.5px solid #DC5014;
+    text-align: left;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.mobile{
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: #FFEAD8;
+    border:1.5px solid #DC5014;
+    text-align: left;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#Password,#Password1,#Mobile::placeholder{
+    font-size: 15px;
+}
+#Password{
+    width: 100%;
+    height: 60%;
+    outline: none;
+    border-radius: 5px;
+    background-color: #dc501400;
+    border:none;
+    font-size: 17px;
+    padding-left: 10px;
+}
+#Password1{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    background-color: #dc501400;
+    border:none;
+    font-size: 17px;
+    padding-left: 10px;
+    outline: none;
+}
+#Mobile{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    background-color: #dc501400;
+    border:none;
+    font-size: 17px;
+    padding-left: 10px;
+    outline: none;
+}
+.button3{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#button4{
+    width: 100%;
+    height: 100%;
+    background-color: #DC5014;
+    border:2px solid #DC5014;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.continue{
+    width: 100%;
+    height: 10vh;
+    padding: 10px 0px;
+}
+.google{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.g{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:1.5px solid #DC5014;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+.dont,a{
+    display: inline;
+    color: #dc5014df;
+}
+a{
+    color: #fc4e04;
+    font-weight: bold;
+}
+.re{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:900px){
+    .content{
+        display: block;
+    }
+    .sign_in{
+        width: 100%;
+        height: auto;
+    }
+    .image{
+        width: 100%;
+        height: auto;
+    }
+    .Login_content{
+        width: 70%;
+        height: auto;
+    }
+}
