@@ -11,6 +11,10 @@
 
     background-image: url(/ABT-PROJECT/Frontend/Assets/image/back\ copy.jpg);
 
+
+    background-image: url(Image/back\ copy.jpg);
+
+
     background-repeat: no-repeat;
     background-size:cover;
 }
