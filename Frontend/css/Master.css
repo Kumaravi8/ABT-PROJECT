@@ -55,7 +55,7 @@
 .content{
     width: 100%;
     height:85vh;
-    background-image: url(/Anubhav/ABT-PROJECT/Frontend/Assets/image/slider.jpeg);
+    background-image: url(/ABT-PROJECT/Frontend/Assets/image/slider.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -75,10 +75,80 @@
 .content h1 span{
     color: #DC5014;
 }
-.l{
-    width: 1px;
-    height: 150px;
-    background-color: white;
+.textcontent{
+    width: 100%;
+    background-color: #dc501455;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+.textcontent .image{
+    width: 40%;
+    height: 100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.textcontent .text{
+    width: 40%;
+    height: 100%;
+    text-align: justify;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.text .an{
+    font-weight: bold;
+    display: inline;
+}
+.text .b{
+    font-weight: bold;
+    color: #DC5014;
+    display: inline;
+}
+.textcontent1{
+    width: 100%;
+    height: 60vh;
+    background-color: #dc501455;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+.textcontent1 .text1{
+    width: 50%;
+    height: 100%;
+    margin: 10px 0px;
+}
+.text1_c1{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    text-align: justify;
+
+}
+.text1_c2{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    font-size: 25px;
+    text-align: justify;
+}
+.textcontent1 .image1{
+    width: 30%;
+    height: 100%;
+}
+.image1 img{
+    width: 100%;
+    height: 100%;
+}
+.text1_c2 .an{
+    display: inline;
+    font-weight: bold;
+}
+.text1_c2 .b{
+    display: inline;
+    font-weight: bold;
+    color:#DC5014;
 }
 @media (max-width:1503px){
     .content{
@@ -91,6 +161,38 @@
         flex-direction: column;
         text-align: center;
     }
+    .textcontent{
+        display: block;
+    }
+    .textcontent .image{
+        width: 100%;
+        
+    }
+    .textcontent .text{
+        width: 100%;
+        height: auto;
+    }
+    .textcontent1{
+        width: 100%;
+        display: block;
+    }
+    .textcontent1 .text1{
+        width: 100%;
+        height: auto;
+    }
+    .textcontent1 .image1{
+        width: 100%;
+    }
+    .textcontent .text{
+        padding: 0px 10px;
+    }
+    .textcontent1 .text1 .text1_c1,.text1_c2{
+        padding: 0px 10px;
+    }
+    .textcontent1 .text1 .text1_c2{
+        padding-top: 20px;
+    }
+
 
     .navbar_c2 {
         padding-top: 10px;
@@ -108,9 +210,24 @@
 /* Mobile Devices */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction:column;
         align-items: center;
         padding: 10px;
+    }
+    .achivement .flower{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .flower .a_c1{
+        border: none;
+    }
+    .flower .a_c2{
+        border: none;
+    }
+    .flower .a_c3{
+        border: none;
+    }
+    .achivement #ac{
+        font-size: 3rem;
     }
 
     .navbar_c1,
@@ -133,7 +250,11 @@
         font-size: 2rem;
     }
 }
-
+@media (max-width:582px){
+    .achivement .flower{
+        grid-template-columns: 1fr;
+    }
+}
 /* Small Mobile Screens */
 @media (max-width: 480px) {
     .navbar {
@@ -158,19 +279,36 @@
     text-align: center;
 }
 .flower{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width:100%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap: 10px;
+   
 }
 .achivement h1{
     font-size: 80px;
     color: white;
 }
 .flower .a_c1,.a_c2,.a_c3,.a_c4{
- width: 24%;
+ width: 100%;
  height: auto;
  padding: 50px 10px;
  
+}
+.a_c1{
+    border-right-color: white;
+    border-right-width: 2px;
+    border-right-style: solid ;
+}
+.a_c2{
+    border-right-color: white;
+    border-right-width: 2px;
+    border-right-style: solid ;
+}
+.a_c3{
+    border-right-color: white;
+    border-right-width: 2px;
+    border-right-style: solid ;
 }
 .a_c1_c1{
     font-size: 25px;
@@ -195,4 +333,5 @@
 }
 .flower h2{
     padding-top: 10px;
+    color:white;
 }

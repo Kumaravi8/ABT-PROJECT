@@ -1,3 +1,3 @@
 function signin(){
-    window.open("login.html","_self");
+    window.open("/ABT-PROJECT/Frontend/Pages/login.html","_self");
 }
